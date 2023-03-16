@@ -218,3 +218,37 @@
 # 	echo $i
 # 	i=$((i+1))
 # done
+########################################################################################
+
+# functions
+# function hello {
+# 	echo "hello world"
+# }
+
+# hello(){
+#     echo "hello to you $1"
+#     # u can change the return status
+#     return 26
+# }
+
+# # call the function
+# hello "islam"
+# echo "the return status is $?"
+
+########################################################################################
+
+# variables scope
+# global scope
+var_glob="global scope"
+
+function hello {
+	# local scope
+	local var="local scope"
+    echo "$var_glob from function"
+    echo "$var from function"
+    # u can define global in here but it's not recommended
+    var2_glob="global scope"
+}
+
+hello
+echo $var2_glob
