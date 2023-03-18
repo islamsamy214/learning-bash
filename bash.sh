@@ -239,16 +239,38 @@
 
 # variables scope
 # global scope
-var_glob="global scope"
+# var_glob="global scope"
 
-function hello {
-	# local scope
-	local var="local scope"
-    echo "$var_glob from function"
-    echo "$var from function"
-    # u can define global in here but it's not recommended
-    var2_glob="global scope"
-}
+# function hello {
+# 	# local scope
+# 	local var="local scope"
+#     echo "$var_glob from function"
+#     echo "$var from function"
+#     # u can define global in here but it's not recommended
+#     var2_glob="global scope"
+# }
 
-hello
-echo $var2_glob
+# hello
+# echo $var2_glob
+
+########################################################################################
+# echo "-------------Calculator script--------------"
+# # << holds the input until EOF
+# # -p with only -p to get the input from the user
+
+# if [ $1 == "-p" ]; then
+#     precision=$2
+#     # in this case this will be an error with $@ because it will take the -p and the number as an argument so we need to shift the arguments
+#     shift 2
+# else
+#     precision=2
+# fi
+
+# bc << EOF
+# #scale is the number of decimal places
+# scale=$precision
+# # to get all the input from the user
+# $@
+# EOF
+
+########################################################################################
