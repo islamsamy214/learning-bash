@@ -274,3 +274,47 @@
 # EOF
 
 ########################################################################################
+
+# # hear a variable it will take the input from the output of the command
+# a=$(ls)
+# echo $a
+
+# # or
+
+# a=`ls`
+# echo $a
+
+# # or but it's not recommended because it's hear from string not a command as an user input
+# # its cool to declare a multible variable with the same value
+# read a v s <<< "hi there how are you"
+# echo $v
+
+########################################################################################
+
+# grep is only for searching in a file or a string like >> and >>> they are for appending and overwriting in a file
+# grep "empty" regfile
+
+########################################################################################
+
+#IFS
+# IFS is the internal field separator
+# it's used to split the string
+# by default it's space and tab
+# we can change it to anything we want
+# we can use it in a loop to split the string
+# we can use it in a function to split the string
+# we can use it in a command to split the string
+
+# oldIFS=$IFS
+# IFS=":"
+# echo "the new IFS is $IFS"
+# a="hi:there:how:are:you"
+# for i in $a
+# do
+#     echo $i
+# done
+# # echo "hi:there:how:are:you"
+# IFS=$oldIFS
+# echo "return to the old IFS is $IFS"
+
+########################################################################################
