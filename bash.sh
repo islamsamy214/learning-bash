@@ -318,3 +318,23 @@
 # echo "return to the old IFS is $IFS"
 
 ########################################################################################
+
+# # word count in a file it will count the number of lines then words then characters in a file
+# wc regfile
+# echo "hello world" | wc
+# # get only the number of lines
+# wc -l regfile
+# # get only the number of words
+# wc -w regfile
+# # get only the number of characters
+# wc -c regfile
+
+########################################################################################
+
+# # strings command it will show the strings in a file
+# strings regfile
+# # strings command with -n to show the strings with a specific length and higher
+# strings -n 20 regfile
+
+########################################################################################
+
